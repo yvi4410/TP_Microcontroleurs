@@ -19,7 +19,7 @@
                    projectFiles="true">
     </logicalFolder>
     <itemPath>configbits.h</itemPath>
-    <itemPath>mainTP2A.c</itemPath>
+    <itemPath>mainTP2C.c</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
