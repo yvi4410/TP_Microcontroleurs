@@ -19,11 +19,11 @@
                    projectFiles="true">
     </logicalFolder>
     <itemPath>configbits.h</itemPath>
-    <itemPath>main.c</itemPath>
     <itemPath>lcd.c</itemPath>
     <itemPath>lcd.h</itemPath>
     <itemPath>spi.c</itemPath>
     <itemPath>spi.h</itemPath>
+    <itemPath>mainTP3_UART.c</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

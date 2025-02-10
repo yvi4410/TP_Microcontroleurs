@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>TryLcd</name>
+            <name>TP3_UART_SPI</name>
             <name>TP1d_interrupt</name>
             <name>TP1c_timer2</name>
             <creation-uuid>5295ea06-fa21-452f-8f13-ab82661c2aa6</creation-uuid>
