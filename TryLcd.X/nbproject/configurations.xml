@@ -35,8 +35,8 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PK5Tool</platformTool>
         <languageToolchain>XC8</languageToolchain>
-        <languageToolchainVersion>3.00</languageToolchainVersion>
-        <platform>4</platform>
+        <languageToolchainVersion>2.46</languageToolchainVersion>
+        <platform>3</platform>
       </toolsSet>
       <packs>
         <pack name="PIC12-16F1xxx_DFP" vendor="Microchip" version="1.7.242"/>
