@@ -53,4 +53,4 @@ void main(void) {
         UART_SendTable(message, message_length);
         __delay_ms(1000);
     }
-}
+} 
