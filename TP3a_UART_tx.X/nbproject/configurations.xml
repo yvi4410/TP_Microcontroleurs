@@ -23,7 +23,7 @@
     <itemPath>lcd.h</itemPath>
     <itemPath>spi.c</itemPath>
     <itemPath>spi.h</itemPath>
-    <itemPath>mainTP3_UART.c</itemPath>
+    <itemPath>mainTP3a.c</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
