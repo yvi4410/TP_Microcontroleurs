@@ -1,0 +1,161 @@
+|toplevel
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= <GND>
+LEDR[9] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] <= full_adder_4b:u_adder.s[0]
+LEDG[1] <= full_adder_4b:u_adder.s[1]
+LEDG[2] <= full_adder_4b:u_adder.s[2]
+LEDG[3] <= full_adder_4b:u_adder.s[3]
+LEDG[4] <= <GND>
+LEDG[5] <= <GND>
+LEDG[6] <= <GND>
+LEDG[7] <= full_adder_4b:u_adder.Cout
+SW[0] => full_adder_4b:u_adder.a[0]
+SW[0] => LEDR[0].DATAIN
+SW[1] => full_adder_4b:u_adder.a[1]
+SW[1] => LEDR[1].DATAIN
+SW[2] => full_adder_4b:u_adder.a[2]
+SW[2] => LEDR[2].DATAIN
+SW[3] => full_adder_4b:u_adder.a[3]
+SW[3] => LEDR[3].DATAIN
+SW[4] => full_adder_4b:u_adder.b[0]
+SW[4] => LEDR[4].DATAIN
+SW[5] => full_adder_4b:u_adder.b[1]
+SW[5] => LEDR[5].DATAIN
+SW[6] => full_adder_4b:u_adder.b[2]
+SW[6] => LEDR[6].DATAIN
+SW[7] => full_adder_4b:u_adder.b[3]
+SW[7] => LEDR[7].DATAIN
+SW[8] => ~NO_FANOUT~
+SW[9] => full_adder_4b:u_adder.Cin
+SW[9] => LEDR[9].DATAIN
+
+
+|toplevel|full_adder_4b:u_adder
+Cin => full_adder_1_bit:b2v_inst.Cin
+a[0] => full_adder_1_bit:b2v_inst.a
+a[1] => full_adder_1_bit:b2v_inst2.a
+a[2] => full_adder_1_bit:b2v_inst3.a
+a[3] => full_adder_1_bit:b2v_inst4.a
+b[0] => full_adder_1_bit:b2v_inst.b
+b[1] => full_adder_1_bit:b2v_inst2.b
+b[2] => full_adder_1_bit:b2v_inst3.b
+b[3] => full_adder_1_bit:b2v_inst4.b
+Cout <= full_adder_1_bit:b2v_inst4.Cout
+s[0] <= full_adder_1_bit:b2v_inst.s
+s[1] <= full_adder_1_bit:b2v_inst2.s
+s[2] <= full_adder_1_bit:b2v_inst3.s
+s[3] <= full_adder_1_bit:b2v_inst4.s
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst
+a => half_adder:instance_Adder1.a
+b => half_adder:instance_Adder1.b
+Cin => half_adder:instance_Adder2.b
+s <= half_adder:instance_Adder2.s
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst|Half_Adder:instance_Adder1
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst|Half_Adder:instance_Adder2
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst2
+a => half_adder:instance_Adder1.a
+b => half_adder:instance_Adder1.b
+Cin => half_adder:instance_Adder2.b
+s <= half_adder:instance_Adder2.s
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst2|Half_Adder:instance_Adder1
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst2|Half_Adder:instance_Adder2
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst3
+a => half_adder:instance_Adder1.a
+b => half_adder:instance_Adder1.b
+Cin => half_adder:instance_Adder2.b
+s <= half_adder:instance_Adder2.s
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst3|Half_Adder:instance_Adder1
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst3|Half_Adder:instance_Adder2
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst4
+a => half_adder:instance_Adder1.a
+b => half_adder:instance_Adder1.b
+Cin => half_adder:instance_Adder2.b
+s <= half_adder:instance_Adder2.s
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst4|Half_Adder:instance_Adder1
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|full_adder_4b:u_adder|full_adder_1_bit:b2v_inst4|Half_Adder:instance_Adder2
+a => s.IN0
+a => c.IN0
+b => s.IN1
+b => c.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
