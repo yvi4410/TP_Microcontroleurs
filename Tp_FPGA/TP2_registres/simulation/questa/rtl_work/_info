@@ -1,0 +1,110 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/simulation/questa
+T_opt
+!s110 1746601412
+Vk5zC8`<?0QFHDm=eld6Ib2
+04 21 23 work tb_universal_register universal_register_arch 1
+=1-001c42b83f3f-681b05c3-2cd-7d8
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U2 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_hssi -L rtl_work -L work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2024.3;79
+Etb_universal_register
+Z2 w1746600164
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R1
+Z5 8C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/tb_universal_register.vhd
+Z6 FC:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/tb_universal_register.vhd
+l0
+L31 1
+Vh1Do=S[HhKoPV9:`?OmkO3
+!s100 Y4TRMN1?jcHeiWglYMS4>3
+Z7 OL;C;2024.3;79
+31
+Z8 !s110 1746601410
+!i10b 1
+Z9 !s108 1746601410.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/tb_universal_register.vhd|
+Z11 !s107 C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/tb_universal_register.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Auniversal_register_arch
+Z14 DEx4 work 18 universal_register 0 22 VEXKX0?QT<GbKg83h8dSL2
+R3
+R4
+DEx4 work 21 tb_universal_register 0 22 h1Do=S[HhKoPV9:`?OmkO3
+!i122 1
+l50
+L34 33674
+VYDS<4IHe4F;E@?<UbTK8T3
+!s100 @diMeN?^5U`Gfoi=ZLWd50
+R7
+31
+!s110 1746601411
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Euniversal_register
+Z15 w1746601359
+R3
+R4
+!i122 0
+R1
+Z16 8C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/universal_register.vhd
+Z17 FC:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/universal_register.vhd
+l0
+L21 1
+VVEXKX0?QT<GbKg83h8dSL2
+!s100 ]ZK42L6A]:Wkki8flEnXH0
+R7
+31
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/universal_register.vhd|
+Z19 !s107 C:/Users/yvidestombes/AppData/Local/quartus/TP2_registres/universal_register.vhd|
+!i113 0
+R12
+R13
+Artl
+R3
+R4
+R14
+!i122 0
+l45
+L43 60
+VIEcS3GGj2Rl1kXZOD2@E83
+!s100 QYFKBKg[o3jE1Ic=<n@fM2
+R7
+31
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13
